@@ -2,7 +2,10 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
+st.write(
+    "Has environment variables been set:",
+    os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"],
+)
 
 st.set_page_config(layout="wide")
 
