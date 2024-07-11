@@ -4,7 +4,6 @@ import os
 
 
 st.set_page_config(layout="wide")
-os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 
 # Customize the sidebar
@@ -36,8 +35,8 @@ markdown = """
 """
 
 st.markdown(markdown)
+os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 m = geemap.Map()
 m.add_basemap("OpenTopoMap")
 m.to_streamlit(height=500)
-m
