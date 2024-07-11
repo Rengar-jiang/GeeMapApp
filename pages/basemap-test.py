@@ -2,7 +2,7 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-geemap.set_proxy(port=7890)
+os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 st.title("Interactive Map")
 
