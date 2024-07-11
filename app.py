@@ -35,7 +35,6 @@ markdown = """
 """
 
 st.markdown(markdown)
-os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 m = geemap.Map()
 m.add_basemap("OpenTopoMap")
