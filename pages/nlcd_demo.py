@@ -3,7 +3,8 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-geemap.set_proxy(port=443)
+# Initialize the Earth Engine client
+ee.Initialize()
 
 # Get an NLCD image by year.
 def getNLCD(year):
