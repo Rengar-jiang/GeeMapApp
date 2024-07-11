@@ -3,7 +3,6 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 # Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
@@ -27,6 +26,8 @@ Map = geemap.Map(center=[40, -100], zoom=4)
 
 # Select the seven NLCD epochs after 2000.
 years = ["2001", "2004", "2006", "2008", "2011", "2013", "2016", "2019"]
+
+os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 # Add a dropdown list and checkbox to the second column.
 with row1_col2:
