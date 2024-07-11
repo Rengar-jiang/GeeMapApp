@@ -3,9 +3,7 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-# Initialize the Earth Engine client
-ee.Initialize()
-
+os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 # Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
