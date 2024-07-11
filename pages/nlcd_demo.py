@@ -7,7 +7,7 @@ import os
 # 从环境变量中读取token
 ee_token = st.secrets['EARTHENGINE_TOKEN']
 
-ee.Authenticate(ee_token)# Get an NLCD image by year.
+ee.Authenticate(ee_token,proxy_port=7890)# Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
     dataset = ee.ImageCollection("USGS/NLCD_RELEASES/2019_REL/NLCD")
