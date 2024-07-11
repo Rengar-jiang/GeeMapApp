@@ -4,7 +4,7 @@ import geemap.foliumap as geemap
 import os
 
 # geemap.set_proxy(7890)
-ee.Initialize(ee.ServiceAccountCredentials(st.secrets["service_account"], st.secrets['private_key']))
+ee.Initialize(ee.ServiceAccountCredentials(st.secrets["service_account"], st.secrets['jason_data']))
 # Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
