@@ -2,7 +2,6 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 st.title("Interactive Map")
 
 col1, col2 = st.columns([4, 1])
