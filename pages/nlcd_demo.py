@@ -3,9 +3,10 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
+#jss
 # geemap.set_proxy(7890)
 # 从环境变量中读取token
-geemap.set_proxy( 60145,'http://us0150.alibabaokz.com', timeout=10)
+## geemap.set_proxy( 60145,'http://us0150.alibabaokz.com', timeout=10)
 
 def getNLCD(year):
     # Import the NLCD collection.
