@@ -1,8 +1,10 @@
 import ee
 import streamlit as st
 import geemap.foliumap as geemap
+import os
 
 geemap.set_proxy(port=7890)
+os.environ["EARTHENGINE_TOKEN"] == st.secrets["1//0efZfrZq71masCgYIARAAGA4SNwF-L9IrlzpvhgGGFulgS2Cs34eVyn5RiQr5K6moin3ljsw57yOBnp4KeushGNrJB_BXklGduiI"]
 
 # Get an NLCD image by year.
 def getNLCD(year):
