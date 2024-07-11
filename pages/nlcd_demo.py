@@ -6,9 +6,7 @@ import os
 # geemap.set_proxy(7890)
 # 从环境变量中读取token
 geemap.set_proxy( 60145,'http://us0150.alibabaokz.com', timeout=10)
-ee_token = st.secrets['EARTHENGINE_TOKEN']
 
-ee.Authenticate(ee_token)# Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
     dataset = ee.ImageCollection("USGS/NLCD_RELEASES/2019_REL/NLCD")
