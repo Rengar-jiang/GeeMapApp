@@ -2,6 +2,8 @@ import streamlit as st
 import geemap.foliumap as geemap
 
 geemap.set_proxy(port=7890)
+
+
 st.title("Interactive Map")
 
 col1, col2 = st.columns([4, 1])
