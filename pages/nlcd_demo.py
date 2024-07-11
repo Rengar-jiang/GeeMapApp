@@ -4,8 +4,10 @@ import geemap.foliumap as geemap
 import os
 
 # geemap.set_proxy(7890)
-ee.Initialize(ee.ServiceAccountCredentials(st.secrets["service_account"], st.secrets['jason_data']))
-# Get an NLCD image by year.
+# 从环境变量中读取token
+ee_token = st.secrets['EARTHENGINE_TOKEN']
+
+ee.Authenticate(ee_token)# Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
     dataset = ee.ImageCollection("USGS/NLCD_RELEASES/2019_REL/NLCD")
