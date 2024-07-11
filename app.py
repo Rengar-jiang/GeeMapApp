@@ -2,9 +2,9 @@ import streamlit as st
 import geemap.foliumap as geemap
 import os
 
-os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 st.set_page_config(layout="wide")
+os.environ["EARTHENGINE_TOKEN"] == st.secrets["EARTHENGINE_TOKEN"]
 
 
 # Customize the sidebar
