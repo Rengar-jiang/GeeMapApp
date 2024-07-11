@@ -1,3 +1,6 @@
-geemap
 streamlit
+streamlit-folium
+geemap
+leafmap
+click==8
 
