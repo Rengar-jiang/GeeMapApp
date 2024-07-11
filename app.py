@@ -1,6 +1,7 @@
 import streamlit as st
 import geemap.foliumap as geemap
 
+geemap.set_proxy(port=7890)
 st.set_page_config(layout="wide")
 
 # Customize the sidebar
@@ -36,3 +37,4 @@ st.markdown(markdown)
 m = geemap.Map()
 m.add_basemap("OpenTopoMap")
 m.to_streamlit(height=500)
+m

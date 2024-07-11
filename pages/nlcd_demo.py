@@ -2,6 +2,8 @@ import ee
 import streamlit as st
 import geemap.foliumap as geemap
 
+geemap.set_proxy(port=7890)
+
 # Get an NLCD image by year.
 def getNLCD(year):
     # Import the NLCD collection.
