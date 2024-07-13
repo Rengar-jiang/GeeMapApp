@@ -1,4 +1,6 @@
 streamlit
 geemap
 leafmap
+gcsfs
+st-files-connection
 
